@@ -1,0 +1,11 @@
+.content {
+  text-align: center;
+  color: var(--grey);
+  margin: 1rem auto;
+}
+
+@media (max-width: 600px) {
+  .content {
+    font-size: 28px;
+  }
+}

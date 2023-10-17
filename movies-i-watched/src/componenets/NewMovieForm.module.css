@@ -1,0 +1,47 @@
+.card {
+  width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form {
+  margin: 0 auto;
+}
+.form label,
+.form input {
+  display: block;
+  margin: 0.4rem auto;
+  width: 100%;
+}
+.form label {
+  display: block;
+}
+
+.form input,
+.form textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--light-blue);
+  font-family: inherit;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--med-blue);
+  color: var(--grey);
+  border: 1px solid var(--grey);
+  margin: 0.5rem auto;
+}
+
+.button:active {
+  transform: scale(1);
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+  background-color: var(--grey);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 300px;
+  }
+}
