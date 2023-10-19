@@ -7,7 +7,13 @@ const app = express();
 const moviesRouter = require("./routes/movies");
 const authRouter = require('./routes/auth')
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://moviesiwatched-api.vercel.app',
+    optionsSuccessStatus: 200,
+    credentials: true
+  }
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/auth', authRouter)
