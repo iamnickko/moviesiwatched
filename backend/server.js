@@ -8,7 +8,7 @@ const moviesRouter = require("./routes/movies");
 const authRouter = require('./routes/auth')
 
 const corsOptions = {
-    origin: 'https://moviesiwatched.vercel.app/',
+    origin: 'https://moviesiwatched-api.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
     optionsSuccessStatus: 200,
