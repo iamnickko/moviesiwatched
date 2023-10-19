@@ -9,6 +9,8 @@ const authRouter = require('./routes/auth')
 
 const corsOptions = {
     origin: 'https://moviesiwatched.vercel.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
     optionsSuccessStatus: 200,
     credentials: true
   }
