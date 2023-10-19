@@ -8,7 +8,7 @@ const moviesRouter = require("./routes/movies");
 const authRouter = require('./routes/auth')
 
 const corsOptions = {
-    origin: 'https://moviesiwatched-api.vercel.app',
+    origin: 'https://moviesiwatched.vercel.app/',
     optionsSuccessStatus: 200,
     credentials: true
   }
