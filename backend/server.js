@@ -7,15 +7,15 @@ const app = express();
 const moviesRouter = require("./routes/movies");
 const authRouter = require('./routes/auth')
 
-const corsOptions = {
-    origin: 'https://moviesiwatched-api.onrender.com',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
-    optionsSuccessStatus: 200,
-    credentials: true
-  }
+// const corsOptions = {
+//     origin: 'https://moviesiwatched-api.onrender.com',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
+//     allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
+//     optionsSuccessStatus: 200,
+//     credentials: true
+//   }
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 app.use('/auth', authRouter)
